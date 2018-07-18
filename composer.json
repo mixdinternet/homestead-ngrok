@@ -1,0 +1,42 @@
+{
+  "name": "mixdinternet/homestead-ngrok",
+  "description": "Allow ngrok url works on homestead",
+  "keywords": [
+    "laravel",
+    "homestead",
+    "ngrok"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Irineu Martins Junior",
+      "email": "irineu@mixd.com.br",
+      "homepage": "http://www.mixd.com.br/",
+      "role": "Developer"
+    },
+    {
+      "name": "Alex",
+      "email": "_oster_@mail.ru",
+      "homepage": "https://github.com/Osster",
+      "role": "Thanks"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9",
+    "laravel/framework": "5.1.*|5.2.*|5.3.*|5.4.*|5.5.*|5.6.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mixdinternet\\Ngrok\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mixdinternet\\Ngrok\\Providers\\NgrokServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
+  }
+}
